@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:BookPickupRequest xmlns:req="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com book-pickup-req.xsd">
+  <Request xmlns="">
+    <ServiceHeader>
+      <SiteID>DHLMexico2</SiteID>
+      <Password>gW8xKmuj6a3Ps</Password>
+    </ServiceHeader>
+  </Request>
+  <Requestor xmlns="">
+    <AccountType>D</AccountType>
+    <AccountNumber>980039904</AccountNumber>
+  </Requestor>
+  <Place xmlns="">
+    <LocationType>B</LocationType>
+    <CompanyName>Comercial Dportenis</CompanyName>
+    <Address1>carretera mzt-aeropuerto</Address1>
+    <Address2>parque industrial</Address2>
+    <PackageLocation>Recoger en Recepcion</PackageLocation>
+    <City>Alvaro Obregon</City>
+    <DivisionName>Distrito Federal</DivisionName>
+    <CountryCode>MX</CountryCode>
+    <PostalCode>15700</PostalCode>
+  </Place>
+  <Pickup xmlns="">
+    <PickupDate>2019-10-02</PickupDate>
+    <ReadyByTime>10:20</ReadyByTime>
+    <CloseTime>18:20</CloseTime>
+    <Pieces>1</Pieces>
+    <weight>
+      <Weight>5</Weight>
+      <WeightUnit>K</WeightUnit>
+    </weight>
+  </Pickup>
+  <PickupContact xmlns="">
+    <PersonName>Dora Arangure</PersonName>
+    <Phone>4801313131</Phone>
+    <PhoneExtention>5678</PhoneExtention>
+  </PickupContact>
+  <ShipmentDetails xmlns="">
+    <AccountType>D</AccountType>
+    <AccountNumber>980039904</AccountNumber>
+    <BillToAccountNumber>980039904</BillToAccountNumber>
+    <NumberOfPieces>1</NumberOfPieces>
+    <Weight>5</Weight>
+    <WeightUnit>K</WeightUnit>
+    <DoorTo>DD</DoorTo>
+    <DimensionUnit>C</DimensionUnit>
+    <Pieces>
+      <Weight>5</Weight>
+      <Width>2</Width>
+      <Height>2</Height>
+      <Depth>2</Depth>
+    </Pieces>
+  </ShipmentDetails>
+</req:BookPickupRequest>

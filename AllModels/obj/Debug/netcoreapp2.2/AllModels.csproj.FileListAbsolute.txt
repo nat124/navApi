@@ -1,0 +1,11 @@
+D:\navjot pistis\svnProject\PistisApiSVN\AllModels\bin\Debug\netcoreapp2.2\AllModels.deps.json
+D:\navjot pistis\svnProject\PistisApiSVN\AllModels\bin\Debug\netcoreapp2.2\AllModels.runtimeconfig.json
+D:\navjot pistis\svnProject\PistisApiSVN\AllModels\bin\Debug\netcoreapp2.2\AllModels.runtimeconfig.dev.json
+D:\navjot pistis\svnProject\PistisApiSVN\AllModels\bin\Debug\netcoreapp2.2\AllModels.dll
+D:\navjot pistis\svnProject\PistisApiSVN\AllModels\bin\Debug\netcoreapp2.2\AllModels.pdb
+D:\navjot pistis\svnProject\PistisApiSVN\AllModels\obj\Debug\netcoreapp2.2\AllModels.csprojAssemblyReference.cache
+D:\navjot pistis\svnProject\PistisApiSVN\AllModels\obj\Debug\netcoreapp2.2\AllModels.csproj.CoreCompileInputs.cache
+D:\navjot pistis\svnProject\PistisApiSVN\AllModels\obj\Debug\netcoreapp2.2\AllModels.AssemblyInfoInputs.cache
+D:\navjot pistis\svnProject\PistisApiSVN\AllModels\obj\Debug\netcoreapp2.2\AllModels.AssemblyInfo.cs
+D:\navjot pistis\svnProject\PistisApiSVN\AllModels\obj\Debug\netcoreapp2.2\AllModels.dll
+D:\navjot pistis\svnProject\PistisApiSVN\AllModels\obj\Debug\netcoreapp2.2\AllModels.pdb

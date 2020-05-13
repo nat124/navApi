@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<p:DCTRequest xmlns:p='http://www.dhl.com' xmlns:p1='http://www.dhl.com/datatypes' xmlns:p2='http://www.dhl.com/DCTRequestdatatypes'  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.dhl.com DCT-req.xsd '>
+  <GetCapability>
+    <Request>
+      <ServiceHeader>
+        <SiteID>DHLMexico2</SiteID>
+        <Password>gW8xKmuj6a3Ps</Password>
+      </ServiceHeader>
+    </Request>
+    <From>
+      <CountryCode>MX</CountryCode>
+      <Postalcode>15700</Postalcode>
+    </From>
+    <BkgDetails>
+      <PaymentCountryCode>MX</PaymentCountryCode>
+      <Date>2014-10-17</Date>
+      <ReadyTime>PT10H21M</ReadyTime>
+      <DimensionUnit>CM</DimensionUnit>
+      <WeightUnit>KG</WeightUnit>
+      <Pieces>
+        <Piece>
+          <PieceID>1</PieceID>
+          <PackageTypeCode>FLY</PackageTypeCode>
+          <Height>0</Height>
+          <Depth>0</Depth>
+          <Width>0</Width>
+          <Weight>2.0</Weight>
+        </Piece>
+      </Pieces>
+      <IsDutiable>N</IsDutiable>
+    </BkgDetails>
+    <To>
+      <CountryCode>MX</CountryCode>
+      <Postalcode>00002</Postalcode>
+    </To>
+  </GetCapability>
+</p:DCTRequest>

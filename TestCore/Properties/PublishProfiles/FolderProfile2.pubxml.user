@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Vishal\apipub</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Controllers/BannerImagesController.cs">
+      <publishTime>04/27/2020 11:00:03</publishTime>
+    </File>
+    <File Include="Controllers/CartController.cs">
+      <publishTime>03/26/2020 11:58:49</publishTime>
+    </File>
+    <File Include="Controllers/CategoryCommissionController.cs">
+      <publishTime>02/26/2020 16:22:32</publishTime>
+    </File>
+    <File Include="Controllers/CategoryController.cs">
+      <publishTime>04/24/2020 13:10:03</publishTime>
+    </File>
+    <File Include="Controllers/CheckoutController.cs">
+      <publishTime>04/02/2020 12:25:58</publishTime>
+    </File>
+    <File Include="Controllers/CompareProductController.cs">
+      <publishTime>03/12/2020 18:04:24</publishTime>
+    </File>
+    <File Include="Controllers/CountryController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/CustomerController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/CustomerGroupsController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/CustomerHistoryController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/DashboardController.cs">
+      <publishTime>03/12/2020 16:31:28</publishTime>
+    </File>
+    <File Include="Controllers/DealsController.cs">
+      <publishTime>01/23/2020 16:32:55</publishTime>
+    </File>
+    <File Include="Controllers/FeatureProductController.cs">
+      <publishTime>03/12/2020 17:58:04</publishTime>
+    </File>
+    <File Include="Controllers/FooterHeaderController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/FooterUrlController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/FooterUrlDataController.cs">
+      <publishTime>04/18/2020 12:30:39</publishTime>
+    </File>
+    <File Include="Controllers/HelperController.cs">
+      <publishTime>01/30/2020 23:59:57</publishTime>
+    </File>
+    <File Include="Controllers/HomeCategoryController.cs">
+      <publishTime>04/22/2020 18:48:58</publishTime>
+    </File>
+    <File Include="Controllers/HomeListsController.cs">
+      <publishTime>04/02/2020 15:46:31</publishTime>
+    </File>
+    <File Include="Controllers/HomePageController.cs">
+      <publishTime>04/18/2020 15:01:13</publishTime>
+    </File>
+    <File Include="Controllers/LoginController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/MyOrdersController.cs">
+      <publishTime>04/02/2020 19:16:08</publishTime>
+    </File>
+    <File Include="Controllers/NewsLetterController.cs">
+      <publishTime>03/06/2020 11:01:19</publishTime>
+    </File>
+    <File Include="Controllers/NotificationController.cs">
+      <publishTime>03/20/2020 16:41:19</publishTime>
+    </File>
+    <File Include="Controllers/PaymentController.cs">
+      <publishTime>02/28/2020 11:55:41</publishTime>
+    </File>
+    <File Include="Controllers/PaymentTransactionController.cs">
+      <publishTime>03/04/2020 12:23:06</publishTime>
+    </File>
+    <File Include="Controllers/ProductDetailController.cs">
+      <publishTime>04/21/2020 16:12:13</publishTime>
+    </File>
+    <File Include="Controllers/ProductsController.cs">
+      <publishTime>04/24/2020 15:28:20</publishTime>
+    </File>
+    <File Include="Controllers/RatingReviewController.cs">
+      <publishTime>04/07/2020 16:29:16</publishTime>
+    </File>
+    <File Include="Controllers/RelatedTagController.cs">
+      <publishTime>04/08/2020 11:24:19</publishTime>
+    </File>
+    <File Include="Controllers/ReportController.cs">
+      <publishTime>04/02/2020 18:50:32</publishTime>
+    </File>
+    <File Include="Controllers/ReturnController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/RoleController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/SearchTermController.cs">
+      <publishTime>02/11/2020 16:57:27</publishTime>
+    </File>
+    <File Include="Controllers/SeconedLogsController.cs">
+      <publishTime>04/21/2020 18:01:04</publishTime>
+    </File>
+    <File Include="Controllers/ShippingController.cs">
+      <publishTime>02/26/2020 18:33:10</publishTime>
+    </File>
+    <File Include="Controllers/shippingGatewayController.cs">
+      <publishTime>03/12/2020 10:51:02</publishTime>
+    </File>
+    <File Include="Controllers/SliderController.cs">
+      <publishTime>03/28/2020 10:21:41</publishTime>
+    </File>
+    <File Include="Controllers/SpinnerController.cs">
+      <publishTime>02/20/2020 09:52:51</publishTime>
+    </File>
+    <File Include="Controllers/StatesController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/TagController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/TemplateController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/TestController.cs">
+      <publishTime>04/10/2020 16:36:22</publishTime>
+    </File>
+    <File Include="Controllers/TestimonialController.cs">
+      <publishTime>03/05/2020 17:12:24</publishTime>
+    </File>
+    <File Include="Controllers/UserController.cs">
+      <publishTime>02/19/2020 11:31:45</publishTime>
+    </File>
+    <File Include="Controllers/UserLogController.cs">
+      <publishTime>04/24/2020 13:10:03</publishTime>
+    </File>
+    <File Include="Controllers/ValuesController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/VariantsController.cs">
+      <publishTime>12/30/2019 12:01:52</publishTime>
+    </File>
+    <File Include="Controllers/VendorBalanceController.cs">
+      <publishTime>04/02/2020 18:01:10</publishTime>
+    </File>
+    <File Include="Controllers/VendorController.cs">
+      <publishTime>01/16/2020 20:05:39</publishTime>
+    </File>
+    <File Include="Controllers/VendorDashboardController.cs">
+      <publishTime>01/31/2020 13:05:49</publishTime>
+    </File>
+    <File Include="Controllers/VendorProductController.cs">
+      <publishTime>01/09/2020 16:33:19</publishTime>
+    </File>
+    <File Include="Controllers/VendorReportController.cs">
+      <publishTime>01/09/2020 16:33:19</publishTime>
+    </File>
+    <File Include="wwwroot/Template/otp.html">
+      <publishTime>12/06/2019 17:47:40</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

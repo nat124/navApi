@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:ShipmentValidateRequest xmlns:req="http://www.dhl.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com ship-val-req.xsd">
+	<Request>
+		<ServiceHeader>			
+        <SiteID>DHLMexico2</SiteID>
+        <Password>gW8xKmuj6a3Ps</Password>
+		</ServiceHeader>
+	</Request>
+	<RequestedPickupTime>Y</RequestedPickupTime>
+	<NewShipper>N</NewShipper>
+	<LanguageCode>ES</LanguageCode>
+	<PiecesEnabled>Y</PiecesEnabled>
+	<Billing>
+		<ShipperAccountNumber>980039904</ShipperAccountNumber>
+		<ShippingPaymentType>S</ShippingPaymentType>
+		<BillingAccountNumber>980039904</BillingAccountNumber>
+		<DutyPaymentType>S</DutyPaymentType>
+	</Billing>
+	<Consignee>
+		<CompanyName>MARIA DE JESUS GARCIO OLIVO</CompanyName>
+		<AddressLine>CALLE MARTIN CADENA NUM 202</AddressLine>
+		<AddressLine>Col. FULANA</AddressLine>
+		<City>Villahermosa</City>
+		<Division>TABASCO</Division>
+		<PostalCode>86100</PostalCode>
+		<CountryCode>MX</CountryCode>
+		<CountryName>Mexico</CountryName>		
+		<Contact>
+			<PersonName>MARIA DE JESUS GARCIA OLIVO</PersonName>
+			<PhoneNumber>9999999999</PhoneNumber>
+		</Contact>
+	</Consignee>
+	<Reference>
+		<ReferenceID>Orden de compra 9999</ReferenceID>		
+	</Reference>
+	<ShipmentDetails>
+		<NumberOfPieces>2</NumberOfPieces>
+		<Pieces>
+			<Piece>
+				<PieceID>1</PieceID>
+				<PackageType>CP</PackageType>
+				<Weight>3</Weight>
+				<Width>30</Width>
+				<Height>20</Height>
+				<Depth>30</Depth>
+			</Piece>			
+			<Piece>
+				<PieceID>2</PieceID>
+				<PackageType>CP</PackageType>
+				<Weight>3</Weight>
+				<Width>30</Width>
+				<Height>20</Height>
+				<Depth>30</Depth>
+			</Piece>
+		</Pieces>
+		<Weight>6</Weight>
+		<WeightUnit>K</WeightUnit>
+		<GlobalProductCode>N</GlobalProductCode>
+		<LocalProductCode>N</LocalProductCode>
+		<Date>2019-10-01</Date>
+		<Contents>Cosmeticos</Contents>
+		<DoorTo>DD</DoorTo>
+		<DimensionUnit>C</DimensionUnit>		
+		<IsDutiable>N</IsDutiable>
+		<CurrencyCode>MXN</CurrencyCode>
+	</ShipmentDetails>
+	<Shipper>
+		<ShipperID>988220698</ShipperID>
+		<CompanyName>MEXICO SA DE CV</CompanyName>
+		<RegisteredAccount>988127555</RegisteredAccount>
+		<AddressLine>GUSTAVO BAZ KM 12.5</AddressLine>
+		<City>Tlalnepantla</City>
+		<Division>ESTADO DE MEXICO</Division>
+		<DivisionCode>MX</DivisionCode>
+		<PostalCode>54010</PostalCode>
+		<CountryCode>MX</CountryCode>
+		<CountryName>Mexico</CountryName>
+		<Contact>
+			<PersonName>OCTAVIO</PersonName>
+			<PhoneNumber>985006</PhoneNumber>
+		</Contact>
+	</Shipper>
+	<EProcShip>N</EProcShip>
+	<LabelImageFormat>ZPL2</LabelImageFormat>
+</req:ShipmentValidateRequest>
