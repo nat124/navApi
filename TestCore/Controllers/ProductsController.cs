@@ -1330,8 +1330,8 @@ namespace TestCore.Controllers
             }
 
             var model = new List<ProductCatalogue>();
-            var products = db.Products.Where(x => x.IsActive == true && x.IsEnable == true && x.ProductCategory.IsShow==true);
-            var prod = db.Products.Where(x => x.IsActive == true && x.IsEnable == true && x.ProductCategoryId == filter.CategoryId && x.ProductCategory.IsShow == true);
+            var products = db.Products.Where(x => x.IsActive == true && x.IsEnable == true && x.ProductCategory.IsShow==true).Include(x=>x.ProductVariantDetails);
+            var prod = db.Products.Where(x => x.IsActive == true && x.IsEnable == true && x.ProductCategoryId == filter.CategoryId && x.ProductCategory.IsShow == true).Include(x=>x.ProductVariantDetails);
             var catName = "";
 
             //to display category Name
@@ -1341,9 +1341,9 @@ namespace TestCore.Controllers
                 catName = "All Categories";
             decimal minprice = 0;
             decimal maxprice = 0;
-            if (prod.Count() == 0)
+            if (prod.Count() == 0) //if 2nd/1st level category
             {
-                if (filter.CategoryId != 0)
+                if (filter.CategoryId != 0) //find all 3rd lecevel categories under clicked category
                 {
                     var cats =await db.ProductCategories.Where(x => x.ParentId == filter.CategoryId && x.IsActive == true && x.IsShow == true).ToListAsync();
                     var subcats = new List<ProductCategory>();
@@ -1360,68 +1360,19 @@ namespace TestCore.Controllers
                     {
                         prods.AddRange(allprod.Where(x => x.ProductCategoryId == s.Id).Include(x => x.ProductVariantDetails).Include(x => x.ProductCategory).Include(x => x.ProductImages).ToList().RemoveReferences());
                     }
-                    prod = prods.AsQueryable();
+                    prod = prods.AsQueryable().Include(x=>x.ProductVariantDetails);
                 }
                 else
                 {
                     prod = products;
-                }
-
-                //prod = prod.Where(x => x.Name.ToLower().Contains(filter.SearchData.ToLower()));
+                    }
             }
             else
             {
-                if (filter.SelectedVariants.Count() > 0)
-                {
-
-                    foreach (var s in filter.SelectedVariants)
-                    {
-                        var result = new List<Product>();
-                        foreach (var o in s.VariantOptionId)
-                        {
-                            var pro = from cv in db.CategoryVariants
-                                      where s.CategoryId == cv.ProductCategoryId && s.VariantId == cv.VariantId
-                                      join pvo in db.ProductVariantOptions on cv.Id equals pvo.CategoryVariantId
-                                      join pvd in db.ProductVariantDetails on pvo.ProductVariantDetailId equals pvd.Id
-                                      join p in products on pvd.ProductId equals p.Id
-                                      where o == pvo.VariantOptionId
-                                      && cv.IsActive == true && pvo.IsActive == true && pvd.IsActive == true && p.IsActive == true
-                                      select p;
-                            result.AddRange(pro.ToList());
-                        }
-                        products = result.AsQueryable();
-                    }
-                }
+                    prod = products;
             }
 
-            var productsDAta =await db.Products.Where(v => v.ProductCategoryId == filter.CategoryId && v.IsActive == true && v.IsEnable == true).Include(v => v.ProductVariantDetails).ToListAsync();
-            if (productsDAta.Count() == 0)
-            {
-                if (filter.CategoryId != 0)
-                {
-                    var cats = await db.ProductCategories.Where(x => x.ParentId == filter.CategoryId && x.IsActive == true).ToListAsync();
-                  
-                        var subcats = new List<ProductCategory>();
-                    var prods = new List<Product>();
-                    var all = db.ProductCategories.Where(x => x.IsActive == true);
-                    foreach (var c in cats)
-                    {
-                        subcats.AddRange(all.Where(x => x.ParentId == c.Id).ToList());
-                    }
-                    subcats.AddRange(cats);
-                    //to get products from 3-level categoryId
-                    var allprod = db.Products.Where(x => x.IsActive == true && x.IsEnable == true);
-                    foreach (var s in subcats)
-                    {
-                        productsDAta.AddRange(allprod.Where(x => x.ProductCategoryId == s.Id && x.IsActive == true).Include(x => x.ProductVariantDetails).Include(x => x.ProductCategory).Include(x => x.ProductImages).ToList().RemoveReferences());
-                    }
-                }
-                else
-                {
-                    productsDAta =await db.Products.Where(v => v.IsActive == true && v.IsEnable == true).Include(v => v.ProductVariantDetails).ToListAsync();
-                }
-
-            }
+            var productsDAta =await prod.ToListAsync();
             //for variantfilers
             if (filter.SelectedVariants.Count() > 0)
             {
@@ -1444,9 +1395,7 @@ namespace TestCore.Controllers
                 }
             }
 
-
-
-
+            //to link variantdetails in productData
             var variantsData = new List<ProductVariantDetail>();
             foreach (var item in productsDAta)
             {
@@ -1457,18 +1406,17 @@ namespace TestCore.Controllers
                 var data = item.ProductVariantDetails.Where(b => b.IsActive == true).ToList();
                 variantsData.AddRange(data);
             }
-            //variantsData.OrderByDescending(x => x.Id);
-            var priceListdata = new List<ProductVariantDetail>();
-            var plist = prod.ToList();
-            var variantlist =await db.ProductVariantDetails.Where(x => x.IsActive == true).Include(x => x.Product).ToListAsync();
-            foreach (var p in plist)
-            {
-                var list = variantlist.Where(x => x.ProductId == p.Id).ToList();
-                priceListdata.AddRange(list);
-            }
+           // var priceListdata = new List<ProductVariantDetail>();
+            //var plist = prod.ToList();
+            //var variantlist =await db.ProductVariantDetails.Where(x => x.IsActive == true).Include(x => x.Product).ToListAsync();
+            //foreach (var p in plist)
+            //{
+            //    var list = variantlist.Where(x => x.ProductId == p.Id).ToList();
+            //    priceListdata.AddRange(list);
+            //}
             //pricefilter
-            var minprice1 = priceListdata.Count() == 0 ? 0 : priceListdata.Min(x => x.Price);
-            var maxprice1 = priceListdata.Count() == 0 ? 0 : priceListdata.Max(x => x.Price);
+            var minprice1 = prod.Count() == 0 ? 0 : prod.Min(x => x.SellingPrice);
+            var maxprice1 = prod.Count() == 0 ? 0 : prod.Max(x => x.SellingPrice);
             var pricelist = PriceRange(maxprice1, minprice1);
 
             var list1 = new List<ProductVariantDetail>();
@@ -1483,7 +1431,6 @@ namespace TestCore.Controllers
                 list1 = variantsData.Where(x => x.PriceAfterdiscount >= minprice && x.PriceAfterdiscount < maxprice).ToList();
             }
             //search by name
-            //var data11 = 
             foreach (var l in list1)
             {
                 if (l.Product == null)
@@ -1491,7 +1438,6 @@ namespace TestCore.Controllers
                     l.Product =  await db.Products.Where(x => x.Id == l.ProductId && x.IsActive == true && x.IsEnable == true).FirstOrDefaultAsync();
                 }
             }
-            //  list1 = list1.Where(x => x.Product.Name.ToLower().Trim().Contains(filter.SearchData.ToLower().Trim())).ToList();
             if (filter.SearchData != "")
             {
                 var nameList = list1.Where(x => x.Product.Name.ToLower().Trim().Contains(filter.SearchData.ToLower().Trim())).ToList();
@@ -1532,7 +1478,6 @@ namespace TestCore.Controllers
                                 
                             }
                             var data = final.Where(x => x.ProductId == l.ProductId).FirstOrDefault();
-                            //i.VariantOption.ProductVariantOptions = null;
                             i.VariantOption.Variant = null;
                             data?.ColorVariantOptions.Add(i.VariantOption);
                         }
@@ -1571,7 +1516,6 @@ namespace TestCore.Controllers
                 
                 var pro = new ProductCatalogue();
                 pro.Id = p.ProductId;
-                //pro.Name = p.Product.Name;
                 var pdata = productsDAta.Where(x => x.Id == p.ProductId).FirstOrDefault();
                 pro.Name = pdata?.Name;
                 pro.ShipmentVendor = pdata?.ShipmentVendor??false;
@@ -1580,18 +1524,11 @@ namespace TestCore.Controllers
                 pro.Description = pdata?.Description;
                 pro.ProductCategoryName = pdata?.ProductCategory?.Name;
                 pro.ProductCategoryId = Convert.ToInt32(pdata?.ProductCategoryId);
-
-              //  pro.IsAdult = pdata?.ProductCategory?.IsAdult;
-            //  pro.IsAdult=
-
                 pro.InStock = p.InStock;
-
                 pro.VariantDetailId = p.Id;
                 pro.Discount = p.Discount;
                 pro.SellingPrice = p.Price;
                 pro.PriceAfterDiscount = p.PriceAfterdiscount;
-                //}
-
 
                 var selectedImage = new ProductImage();
                 selectedImage =await db.ProductImages.Where(x => x.IsActive == true && x.IsDefault == true && x.ProductVariantDetailId == p.Id).FirstOrDefaultAsync();

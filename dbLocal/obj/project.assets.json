@@ -12215,11 +12215,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\dbLocal\\dbLocal.csproj",
+      "projectUniqueName": "D:\\navjot pistis\\svnProject\\gitapi\\dbLocal\\dbLocal.csproj",
       "projectName": "dbLocal",
-      "projectPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\dbLocal\\dbLocal.csproj",
+      "projectPath": "D:\\navjot pistis\\svnProject\\gitapi\\dbLocal\\dbLocal.csproj",
       "packagesPath": "C:\\Users\\aman\\.nuget\\packages\\",
-      "outputPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\dbLocal\\obj\\",
+      "outputPath": "D:\\navjot pistis\\svnProject\\gitapi\\dbLocal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12238,8 +12238,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\AllModels.csproj": {
-              "projectPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\AllModels.csproj"
+            "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\AllModels.csproj": {
+              "projectPath": "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\AllModels.csproj"
             }
           }
         }

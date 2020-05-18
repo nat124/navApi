@@ -6,6 +6,7 @@ using Localdb;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Models;
 namespace TestCore.Controllers
 {
@@ -87,6 +88,55 @@ namespace TestCore.Controllers
             }
             return Ok();
         }
+        [HttpPost]
+        [Route("paymentConfig")]
+        public async Task<IActionResult> savePaymentConfig(Models.PaymentConfiguration model)
+        {
+            try
+            {
+                var obj = await db.PaymentConfiguration.FirstOrDefaultAsync();
+                if (obj == null)
+                {
+                    obj = new PaymentConfiguration();
+                    obj.Amount = model.Amount;
+                    obj.IsApplied = model.IsApplied;
+                    obj.Percentage = model.Percentage;
+                    db.PaymentConfiguration.Add(obj);
+                    db.SaveChanges();
+                }
+                else
+                {
+                    obj.Amount = model.Amount;
+                    obj.IsApplied = model.IsApplied;
+                    obj.Percentage = model.Percentage;
+                    db.SaveChanges();
+                }
+                return Ok();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
+      [HttpGet]
+        [Route("getPayConfig")]
+        public async Task<IActionResult> getPayConfig()
+        {
+            try
+            {
+                var obj = await db.PaymentConfiguration.FirstOrDefaultAsync();
+                return Ok(obj);
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
 
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\navjot pistis\\svnProject\\PistisApiSVN\\TestCore\\TestCore.csproj": {}
+    "D:\\navjot pistis\\svnProject\\gitapi\\TestCore\\TestCore.csproj": {}
   },
   "projects": {
-    "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\AllModels.csproj": {
+    "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\AllModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\AllModels.csproj",
+        "projectUniqueName": "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\AllModels.csproj",
         "projectName": "AllModels",
-        "projectPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\AllModels.csproj",
+        "projectPath": "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\AllModels.csproj",
         "packagesPath": "C:\\Users\\aman\\.nuget\\packages\\",
-        "outputPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\obj\\",
+        "outputPath": "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -85,14 +85,14 @@
         }
       }
     },
-    "D:\\navjot pistis\\svnProject\\PistisApiSVN\\dbLocal\\dbLocal.csproj": {
+    "D:\\navjot pistis\\svnProject\\gitapi\\dbLocal\\dbLocal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\dbLocal\\dbLocal.csproj",
+        "projectUniqueName": "D:\\navjot pistis\\svnProject\\gitapi\\dbLocal\\dbLocal.csproj",
         "projectName": "dbLocal",
-        "projectPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\dbLocal\\dbLocal.csproj",
+        "projectPath": "D:\\navjot pistis\\svnProject\\gitapi\\dbLocal\\dbLocal.csproj",
         "packagesPath": "C:\\Users\\aman\\.nuget\\packages\\",
-        "outputPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\dbLocal\\obj\\",
+        "outputPath": "D:\\navjot pistis\\svnProject\\gitapi\\dbLocal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -111,8 +111,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\AllModels.csproj": {
-                "projectPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\AllModels.csproj"
+              "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\AllModels.csproj": {
+                "projectPath": "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\AllModels.csproj"
               }
             }
           }
@@ -170,20 +170,20 @@
         }
       }
     },
-    "D:\\navjot pistis\\svnProject\\PistisApiSVN\\TestCore\\TestCore.csproj": {
+    "D:\\navjot pistis\\svnProject\\gitapi\\TestCore\\TestCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\TestCore\\TestCore.csproj",
+        "projectUniqueName": "D:\\navjot pistis\\svnProject\\gitapi\\TestCore\\TestCore.csproj",
         "projectName": "TestCore",
-        "projectPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\TestCore\\TestCore.csproj",
+        "projectPath": "D:\\navjot pistis\\svnProject\\gitapi\\TestCore\\TestCore.csproj",
         "packagesPath": "C:\\Users\\aman\\.nuget\\packages\\",
-        "outputPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\TestCore\\obj\\publish\\linux-x64\\",
+        "outputPath": "D:\\navjot pistis\\svnProject\\gitapi\\TestCore\\obj\\publish\\linux-x64\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "D:\\navjot pistis\\svnProject\\PistisApiSVN\\TestCore\\NuGet.Config",
+          "D:\\navjot pistis\\svnProject\\gitapi\\TestCore\\NuGet.Config",
           "C:\\Users\\aman\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -198,11 +198,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\AllModels.csproj": {
-                "projectPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\AllModels.csproj"
+              "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\AllModels.csproj": {
+                "projectPath": "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\AllModels.csproj"
               },
-              "D:\\navjot pistis\\svnProject\\PistisApiSVN\\dbLocal\\dbLocal.csproj": {
-                "projectPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\dbLocal\\dbLocal.csproj"
+              "D:\\navjot pistis\\svnProject\\gitapi\\dbLocal\\dbLocal.csproj": {
+                "projectPath": "D:\\navjot pistis\\svnProject\\gitapi\\dbLocal\\dbLocal.csproj"
               }
             }
           }

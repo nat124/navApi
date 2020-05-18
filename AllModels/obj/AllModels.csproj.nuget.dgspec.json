@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\AllModels.csproj": {}
+    "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\AllModels.csproj": {}
   },
   "projects": {
-    "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\AllModels.csproj": {
+    "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\AllModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\AllModels.csproj",
+        "projectUniqueName": "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\AllModels.csproj",
         "projectName": "AllModels",
-        "projectPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\AllModels.csproj",
+        "projectPath": "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\AllModels.csproj",
         "packagesPath": "C:\\Users\\aman\\.nuget\\packages\\",
-        "outputPath": "D:\\navjot pistis\\svnProject\\PistisApiSVN\\AllModels\\obj\\",
+        "outputPath": "D:\\navjot pistis\\svnProject\\gitapi\\AllModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

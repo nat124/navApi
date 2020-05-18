@@ -12,3 +12,17 @@ D:\navjot pistis\svnProject\PistisApiSVN\dbLocal\obj\Release\netcoreapp2.2\dbLoc
 D:\navjot pistis\svnProject\PistisApiSVN\dbLocal\obj\Release\netcoreapp2.2\dbLocal.csproj.CopyComplete
 D:\navjot pistis\svnProject\PistisApiSVN\dbLocal\obj\Release\netcoreapp2.2\dbLocal.dll
 D:\navjot pistis\svnProject\PistisApiSVN\dbLocal\obj\Release\netcoreapp2.2\dbLocal.pdb
+D:\navjot pistis\svnProject\gitapi\dbLocal\bin\Release\netcoreapp2.2\dbLocal.deps.json
+D:\navjot pistis\svnProject\gitapi\dbLocal\bin\Release\netcoreapp2.2\dbLocal.runtimeconfig.json
+D:\navjot pistis\svnProject\gitapi\dbLocal\bin\Release\netcoreapp2.2\dbLocal.runtimeconfig.dev.json
+D:\navjot pistis\svnProject\gitapi\dbLocal\bin\Release\netcoreapp2.2\dbLocal.dll
+D:\navjot pistis\svnProject\gitapi\dbLocal\bin\Release\netcoreapp2.2\dbLocal.pdb
+D:\navjot pistis\svnProject\gitapi\dbLocal\bin\Release\netcoreapp2.2\AllModels.dll
+D:\navjot pistis\svnProject\gitapi\dbLocal\bin\Release\netcoreapp2.2\AllModels.pdb
+D:\navjot pistis\svnProject\gitapi\dbLocal\obj\Release\netcoreapp2.2\dbLocal.csprojAssemblyReference.cache
+D:\navjot pistis\svnProject\gitapi\dbLocal\obj\Release\netcoreapp2.2\dbLocal.csproj.CoreCompileInputs.cache
+D:\navjot pistis\svnProject\gitapi\dbLocal\obj\Release\netcoreapp2.2\dbLocal.AssemblyInfoInputs.cache
+D:\navjot pistis\svnProject\gitapi\dbLocal\obj\Release\netcoreapp2.2\dbLocal.AssemblyInfo.cs
+D:\navjot pistis\svnProject\gitapi\dbLocal\obj\Release\netcoreapp2.2\dbLocal.csproj.CopyComplete
+D:\navjot pistis\svnProject\gitapi\dbLocal\obj\Release\netcoreapp2.2\dbLocal.dll
+D:\navjot pistis\svnProject\gitapi\dbLocal\obj\Release\netcoreapp2.2\dbLocal.pdb
